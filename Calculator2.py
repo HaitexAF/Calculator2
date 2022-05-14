@@ -18,8 +18,8 @@ while True:
         print(f"{x3} * {y3} = {x3 * y3}")
     elif "/" in Operation:
         t = Operation.index("/")
-        x4 = int(Operation[0:t])
-        y4 = int(Operation[t+1:])
+        x4 = float(Operation[0:t])
+        y4 = float(Operation[t+1:])
         print(f"{x4} / {y4} = {x4 / y4}")
     else:
         raise ValueError
